@@ -14,7 +14,25 @@ print("3. Exit")
 choice = input("\nEnter your choice: ")
 
 if choice == "1":
-    print("\nYour investigation begins!")
+    def room1():
+    print("\n================================")
+    print("       ROOM 1: CRIME SCENE")
+    print("================================")
+
+    print("\nA mysterious crime has occurred.")
+    print("You find a locked drawer.")
+
+    print("\nRiddle:")
+    print("I have keys but no locks.")
+    print("I have space but no room.")
+    print("What am I?")
+
+    answer = input("\nYour answer: ")
+
+    if answer.lower() == "keyboard":
+        print("\nCorrect! You found your first clue.")
+    else:
+        print("\nIncorrect! Try again next time.")
 
 elif choice == "2":
     print("\nSolve puzzles and collect clues.")
