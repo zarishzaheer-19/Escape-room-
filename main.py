@@ -1,20 +1,5 @@
-print("================================")
-print("          THE LAST CLUE")
-print("     MYSTERY DETECTIVE GAME")
-print("================================")
-
-name = input("\nEnter detective name: ")
-
-print("\nWelcome Detective", name)
-
-print("\n1. Start Investigation")
-print("2. Instructions")
-print("3. Exit")
-
-choice = input("\nEnter your choice: ")
-
-if choice == "1":
-    def room1():
+# ROOM 1 FUNCTION
+def room1():
     print("\n================================")
     print("       ROOM 1: CRIME SCENE")
     print("================================")
@@ -33,6 +18,26 @@ if choice == "1":
         print("\nCorrect! You found your first clue.")
     else:
         print("\nIncorrect! Try again next time.")
+
+
+# MAIN MENU
+print("================================")
+print("          THE LAST CLUE")
+print("     MYSTERY DETECTIVE GAME")
+print("================================")
+
+name = input("\nEnter detective name: ")
+
+print("\nWelcome Detective", name)
+
+print("\n1. Start Investigation")
+print("2. Instructions")
+print("3. Exit")
+
+choice = input("\nEnter your choice: ")
+
+if choice == "1":
+    room1()
 
 elif choice == "2":
     print("\nSolve puzzles and collect clues.")
